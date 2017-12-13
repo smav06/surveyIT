@@ -59,6 +59,8 @@ public class ResearcherRegister extends AppCompatActivity {
                 } else {
                     LoginRegisterTask lrTask = new LoginRegisterTask(ResearcherRegister.this);
                     lrTask.execute("register", etName.getText().toString(), etUsername.getText().toString(), etPassword.getText().toString());
+
+
                 }
             }
         });

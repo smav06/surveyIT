@@ -6,4 +6,29 @@
     android:layout_height="match_parent"
     tools:context="com.example.shielamae.surveyit_ver1.RespondentUI">
 
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/iconsearch"
+        tools:layout_editor_absoluteY="16dp"
+        tools:layout_editor_absoluteX="347dp" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="314dp"
+        android:layout_height="39dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text=""
+        android:hint="Search"
+        tools:layout_editor_absoluteY="19dp"
+        tools:layout_editor_absoluteX="20dp" />
+
+    <ListView
+        android:layout_width="394dp"
+        android:layout_height="579dp"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="72dp" />
+
 </android.support.constraint.ConstraintLayout>

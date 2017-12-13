@@ -15,4 +15,7 @@ public class ResearcherUI extends AppCompatActivity {
 
 
     }
+    @Override
+    public void onBackPressed() {
+    }
 }

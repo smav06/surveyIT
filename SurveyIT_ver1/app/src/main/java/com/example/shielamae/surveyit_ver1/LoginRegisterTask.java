@@ -49,6 +49,7 @@ public class LoginRegisterTask extends AsyncTask<String, Void, String> {
     AlertDialog.Builder builder;
     ProgressDialog progressDialog;
     String method;
+    String code;
     // String uemail;
 
 
@@ -108,7 +109,7 @@ public class LoginRegisterTask extends AsyncTask<String, Void, String> {
 
                 }
                 httpURLConnection.disconnect();
-                Thread.sleep(5000);
+                Thread.sleep(3000);
                 return stringBuilder.toString().trim();
 
 
@@ -153,7 +154,7 @@ public class LoginRegisterTask extends AsyncTask<String, Void, String> {
                     stringBuilder.append(line + "\n");
                 }
                 httpURLConnection.disconnect();
-                Thread.sleep(5000);
+                Thread.sleep(3000);
                 //Log.d("Test", "Test 3 pass");
                 return stringBuilder.toString().trim();
 
@@ -189,18 +190,20 @@ public class LoginRegisterTask extends AsyncTask<String, Void, String> {
             JSONObject jsonObject = new JSONObject(json);
             JSONArray jsonArray = jsonObject.getJSONArray("server_response");
             JSONObject JO = jsonArray.getJSONObject(0);
-            String code = JO.getString("code");
+            code = JO.getString("code");
             String message = JO.getString("message");
 
             if (code.equals("reg_true")) {
                 Toast.makeText(ctx, message, Toast.LENGTH_LONG).show();
+                ((Activity)ctx).finish();
                /* showDialog("Registration Success", message, code);*/
             } else if (code.equals("reg_false")) {
                 Toast.makeText(ctx, message, Toast.LENGTH_LONG).show();
                /* showDialog("Registration Failed", message, code);*/
             }
             if (code.equals("login_true")) {
-                Toast.makeText(ctx, message, Toast.LENGTH_LONG).show();
+                Toast.makeText(ctx, message, Toast.LENGTH_SHORT).show();
+                activity.startActivity(new Intent(activity,ResearcherUI.class));
                /* showDialog("Login Success", message, code);*/
             } else if (code.equals("login_false")) {
                 Toast.makeText(ctx, message, Toast.LENGTH_LONG).show();

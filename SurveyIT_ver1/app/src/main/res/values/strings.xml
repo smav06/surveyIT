@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">SurveyIT_ver1</string>
+    <string name="name">Name</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="verify_password">Verify Password</string>
+    <string name="register">REGISTER</string>
+    <string name="surveyit">SURVEYIT</string>
+    <string name="login">LOGIN</string>
+    <string name="create_account">Create Account</string>
+    <string name="respondent">Respondent</string>
+    <string name="researcher">Researcher</string>
 </resources>
