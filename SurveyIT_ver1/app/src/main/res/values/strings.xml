@@ -10,4 +10,6 @@
     <string name="create_account">Create Account</string>
     <string name="respondent">Respondent</string>
     <string name="researcher">Researcher</string>
+    <string name="search">Search</string>
+    <string name="searchicon">SearchIcon</string>
 </resources>
