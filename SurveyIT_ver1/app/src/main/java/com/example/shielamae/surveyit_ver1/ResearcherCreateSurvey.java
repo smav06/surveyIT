@@ -32,31 +32,7 @@ public class ResearcherCreateSurvey extends AppCompatActivity {
         btnCreateQuestion.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                AlertDialog.Builder builder = new AlertDialog.Builder(ResearcherCreateSurvey.this);
-                builder.setTitle("Add Question");
 
-// Set up the input
-                final EditText questionString = new EditText(ResearcherCreateSurvey.this);
-// Specify the type of input expected; this, for example, sets the input as a password, and will mask the text
-                questionString.setHint("Question");
-                questionString.setInputType(InputType.TYPE_CLASS_TEXT | InputType.TYPE_TEXT_VARIATION_PASSWORD);
-                builder.setView(questionString);
-
-// Set up the buttons
-                builder.setPositiveButton("Save", new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialog, int which) {
-                        m_Text = questionString.getText().toString();
-                    }
-                });
-                builder.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialog, int which) {
-                        dialog.cancel();
-                    }
-                });
-
-                builder.show();
             }
         });
 

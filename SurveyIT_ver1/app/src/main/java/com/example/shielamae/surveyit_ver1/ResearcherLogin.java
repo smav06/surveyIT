@@ -44,9 +44,9 @@ public class ResearcherLogin extends AppCompatActivity {
                 }
 
                 else {
-                    startActivity(new Intent(ResearcherLogin.this,ResearcherUI.class));
-                    //LoginRegisterTask backgroundTask = new LoginRegisterTask(ResearcherLogin.this);
-                    //backgroundTask.execute("login",etusername.getText().toString(),etpassword.getText().toString());
+                    //startActivity(new Intent(ResearcherLogin.this,ResearcherUI.class));
+                    LoginRegisterTask backgroundTask = new LoginRegisterTask(ResearcherLogin.this);
+                    backgroundTask.execute("login",etusername.getText().toString(),etpassword.getText().toString());
 
 
 
