@@ -17,7 +17,7 @@ import android.widget.EditText;
 
 public class ResearcherCreateSurvey extends AppCompatActivity {
 
-    EditText surveytitleEdittext;
+    EditText surveytitleEdittext,surveydescriptionEdittext,marginoferrorsEdittext;
     FloatingActionButton btnCreateQuestion;
     FloatingActionButton btnSavesurvey;
     private String m_Text;
@@ -28,6 +28,8 @@ public class ResearcherCreateSurvey extends AppCompatActivity {
         surveytitleEdittext = findViewById(R.id.surveytitleedittext);
         btnCreateQuestion = findViewById(R.id.btnCreateQuestion);
         btnSavesurvey = findViewById(R.id.btnSaveSurvey);
+        surveydescriptionEdittext = findViewById(R.id.surveydescedittxt);
+        marginoferrorsEdittext = findViewById(R.id.MofEedittxt);
 
         btnCreateQuestion.setOnClickListener(new View.OnClickListener() {
             @Override
