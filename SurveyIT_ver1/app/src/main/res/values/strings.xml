@@ -14,4 +14,6 @@
     <string name="searchicon">SearchIcon</string>
     <string name="questions">Questions</string>
     <string name="survey_name">Survey Name</string>
+    <string name="description">Description</string>
+    <string name="margin_of_errors">Margin of Errors (%)</string>
 </resources>

@@ -7,7 +7,7 @@
     tools:layout_editor_absoluteY="25dp">
 
     <EditText
-        android:id="@+id/surveytitleedittext"
+        android:id="@+id/surveytitleedittxt"
         android:layout_width="335dp"
         android:layout_height="49dp"
         android:layout_marginBottom="8dp"
@@ -15,12 +15,45 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:hint="@string/survey_name"
+        android:maxLines="1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.515"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.033" />
+
+    <EditText
+        android:id="@+id/surveydescedittxt"
+        android:layout_width="319dp"
+        android:layout_height="76dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="72dp"
+        android:hint="@string/description"
+        android:minLines="3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.51"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/MofEedittxt"
+        android:layout_width="172dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:hint="@string/margin_of_errors"
+        android:inputType="numberDecimal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.133"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.273" />
+
 
     <TextView
         android:id="@+id/textView2"
@@ -32,12 +65,12 @@
         android:layout_marginTop="8dp"
         android:text="@string/questions"
         android:textColor="@color/colorBlack"
-        android:textSize="18dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/scrollView2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/surveytitleedittext"
-        app:layout_constraintVertical_bias="0.017" />
+        app:layout_constraintTop_toBottomOf="@+id/MofEedittxt"
+        app:layout_constraintVertical_bias="0.939" />
 
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/btnCreateQuestion"
@@ -66,7 +99,6 @@
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        app:srcCompat="@android:drawable/ic_menu_save"
         android:clickable="true"
         android:focusable="true"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -75,13 +107,13 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.944"
-         />
+        app:srcCompat="@android:drawable/ic_menu_save" />
 
     <ScrollView
         android:id="@+id/scrollView2"
-        android:layout_width="342dp"
-        android:layout_height="421dp"
-        android:layout_marginBottom="8dp"
+        android:layout_width="330dp"
+        android:layout_height="325dp"
+        android:layout_marginBottom="16dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:orientation="vertical"
@@ -100,5 +132,6 @@
         </RelativeLayout>
 
     </ScrollView>
+
 
 </android.support.constraint.ConstraintLayout>

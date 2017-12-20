@@ -42,8 +42,8 @@ import static android.support.v4.content.ContextCompat.startActivity;
 
 public class LoginRegisterTask extends AsyncTask<String, Void, String> {
 
-    String urlRegister = "http://192.168.137.1:1234/surveyIT_Files/configs/register.php";
-    String urlLogin = "http://192.168.137.1:1234/surveyIT_Files/configs/login.php";
+    String urlRegister = "http://192.168.1.8:1234/surveyIT_Files/configs/register.php";
+    String urlLogin = "http://192.168.1.8:1234/surveyIT_Files/configs/login.php";
     Context ctx;
     Activity activity;
     AlertDialog.Builder builder;
