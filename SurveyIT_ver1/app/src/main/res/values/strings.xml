@@ -16,4 +16,7 @@
     <string name="survey_name">Survey Name</string>
     <string name="description">Description</string>
     <string name="margin_of_errors">Margin of Errors (%)</string>
+    <string name="question">Question</string>
+    <string name="to">To</string>
+    <string name="label_optional">Label (Optional)</string>
 </resources>
