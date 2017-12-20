@@ -204,6 +204,7 @@ public class LoginRegisterTask extends AsyncTask<String, Void, String> {
             if (code.equals("login_true")) {
                 Toast.makeText(ctx, message, Toast.LENGTH_SHORT).show();
                 activity.startActivity(new Intent(activity,ResearcherUI.class));
+
                /* showDialog("Login Success", message, code);*/
             } else if (code.equals("login_false")) {
                 Toast.makeText(ctx, message, Toast.LENGTH_LONG).show();

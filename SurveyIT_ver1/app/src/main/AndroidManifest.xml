@@ -22,7 +22,10 @@
         <activity android:name=".ResearcherLogin" />
         <activity android:name=".RespondentUI" />
         <activity android:name=".ResearcherRegister" />
-        <activity android:name=".ResearcherUI"></activity>
+        <activity android:name=".ResearcherUI"/>
+        <activity android:name=".ResearcherCreateSurvey"/>
+        <activity android:name=".ResearcherSurveyStats"/>
+        <activity android:name=".ResearcherViewSurvey"/>
     </application>
 
 </manifest>

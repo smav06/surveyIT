@@ -20,11 +20,11 @@ public class ResearcherLogin extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_researcher_login);
 
-        txtCreateAccount = (TextView) findViewById(R.id.registerRL);
+        txtCreateAccount =  findViewById(R.id.registerRL);
 
-        etusername = (TextView) findViewById(R.id.usernameRL);
-        etpassword = (TextView) findViewById(R.id.passwordRL);
-        btnLogin = (Button) findViewById(R.id.login);
+        etusername = findViewById(R.id.usernameRL);
+        etpassword = findViewById(R.id.passwordRL);
+        btnLogin = findViewById(R.id.login);
 
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -44,8 +44,9 @@ public class ResearcherLogin extends AppCompatActivity {
                 }
 
                 else {
-                    LoginRegisterTask backgroundTask = new LoginRegisterTask(ResearcherLogin.this);
-                    backgroundTask.execute("login",etusername.getText().toString(),etpassword.getText().toString());
+                    startActivity(new Intent(ResearcherLogin.this,ResearcherUI.class));
+                    //LoginRegisterTask backgroundTask = new LoginRegisterTask(ResearcherLogin.this);
+                    //backgroundTask.execute("login",etusername.getText().toString(),etpassword.getText().toString());
 
 
 

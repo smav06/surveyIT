@@ -21,11 +21,11 @@ public class ResearcherRegister extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_researcher_register);
 
-        etName = (EditText) findViewById(R.id.name);
-        etUsername = (EditText) findViewById(R.id.usernameRR);
-        etPassword = (EditText) findViewById(R.id.passwordRR);
-        etVPassword = (EditText) findViewById(R.id.verifyPassword);
-        btnRegister = (Button) findViewById(R.id.registerRR);
+        etName = findViewById(R.id.name);
+        etUsername = findViewById(R.id.usernameRR);
+        etPassword = findViewById(R.id.passwordRR);
+        etVPassword = findViewById(R.id.verifyPassword);
+        btnRegister = findViewById(R.id.registerRR);
 
         btnRegister.setOnClickListener(new View.OnClickListener() {
             @Override

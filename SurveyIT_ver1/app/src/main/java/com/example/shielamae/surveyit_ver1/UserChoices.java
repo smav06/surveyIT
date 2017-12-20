@@ -15,8 +15,8 @@ public class UserChoices extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_user_choices);
 
-        btnResearcher = (Button) findViewById(R.id.researcher);
-        btnRespondent = (Button) findViewById(R.id.respondent);
+        btnResearcher = findViewById(R.id.researcher);
+        btnRespondent = findViewById(R.id.respondent);
 
         btnResearcher.setOnClickListener(new View.OnClickListener() {
             @Override

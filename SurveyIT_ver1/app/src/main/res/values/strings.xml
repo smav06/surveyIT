@@ -12,4 +12,6 @@
     <string name="researcher">Researcher</string>
     <string name="search">Search</string>
     <string name="searchicon">SearchIcon</string>
+    <string name="questions">Questions</string>
+    <string name="survey_name">Survey Name</string>
 </resources>
