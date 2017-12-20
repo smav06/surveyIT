@@ -26,6 +26,7 @@
         <activity android:name=".ResearcherCreateSurvey"/>
         <activity android:name=".ResearcherSurveyStats"/>
         <activity android:name=".ResearcherViewSurvey"/>
+        <activity android:name=".ResearcherSurveyAddQuestion"/>
     </application>
 
 </manifest>
